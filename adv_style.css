@@ -1,0 +1,204 @@
+/*
+Start-icon frame color: #636170
+
+*/
+
+
+* {
+    font-size: 100%;
+    font-family: Trebuchet MS;
+    /*background-color: #bfbdb4;*/
+    color: #cccccc;
+}
+
+body {
+    background: url("Images/mandela-smith-exterior-shot.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input[type='file'] {
+  color: transparent;
+  display: none;
+}
+
+#StartIcons {
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    clear: both;
+}
+
+#SaveLoader {
+    width: 25%;
+    float:left;
+    padding-top: 7.5%;
+    padding-left: 5%;
+}
+
+#SaveLoader img {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #4d4A59;
+    border-width: 3px;
+}
+
+#SaveLoader img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#FileLoaderDiv {
+    width: 40%;
+    float: left;
+    
+}
+
+#FileLoaderDiv  img{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #4d4A59;
+    border-width: 3px;
+}
+
+#FileLoaderDiv img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#Credit {
+    width: 25%;
+    float: left;
+    padding-top: 7.5%;
+    padding-right: 5%;
+}
+
+#Credit img {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #4d4A59;
+    border-width: 3px;
+}
+
+#Credit img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+
+.Navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 10%;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.Navigation  img {
+    display: inline;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Navigation img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+
+.DisplayContainer {
+    position: relative;
+    display: none;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.ImageDisplay {
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-style: solid;
+    border-color: #373540;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.ChoiceDisplay {
+    margin: auto;
+    width: 60%;
+    background-color: #4d4A59;
+    padding: 10px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.TextDisplay {
+    margin: auto;
+    width: 60%;
+    background-color: #373540;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.Choices {
+    display: none;
+    margin: auto;
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a6a198;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #a6a198;
+}
+
+.TextBlock {
+    padding: 10px;
+    margin: 1px;
+    background-color: #8c8887;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8c8887;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.TextBlock:hover {
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    background-color: #8c8887;
+    transition: all 0.4s ease-in-out 0.1s;
+    padding: 10px;
+    margin: 1px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
