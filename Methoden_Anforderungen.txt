@@ -1,3 +1,6 @@
+Kommentare:
+	Zuallererst brauchen wir einen möglichst kompakten Befehl, um Zeilen auszukommentieren. Vorzugsweise immer alle folgenden, bis zum Schließbefehl des Kommentars. Es sollte sich um zwei gleiche Zeichen handeln, die mittels Umschalt erzeugt wrden können, etwa "//".
+
 Gewalt gegen Unbelebtes:
 	Der Spieler kann Türen, Container und dergleichen aufbrechen oder Objekte zerstören, die er physisch vor sich hat. Hierüber wird auch das Legen eines Feuers abgewickelt. 
 	Im Spielfluss bietet das Spiel dem Spieler automatisch die Option "Versuche es mit Gewalt" (klangvollere Bezeichnung erwünscht). 
