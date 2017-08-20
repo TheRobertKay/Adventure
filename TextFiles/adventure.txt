@@ -1,0 +1,52 @@
+#house_0
+Der Abend ist hereingebrochen und die Dunkelheit unter den Bäumen verdichtet sich. Nur mit Mühe kannst du das niedrige Gebäude ausmachen, das sich langsam aus dem Schatten schält. 
+house_1>Ich gehe darauf zu und klopfe an die Tür.  
+house_2>Ich versuche, die Tür zu öffnen.
+house_3>Ich lausche an der Tür. 
+house_4>Ich spähe durch das kaputte Fenster. 
+house_5>Ich versuche, die Tür einzutreten.
+
+#house_1
+Din Klopfen hallt dumpf und verzerrt im Inneren des Hauses wider. Es ertönt keine Antwort. 
+house_0>Ich stehe immer noch vor der Tür.
+
+#house_2
+Ich kauere mich vor der Tür hin und versuche, dem Schloss mit meinen Dietrichen beizukommen. 
+lockpicking_0> Es war knifflig.
+
+
+#house_3
+Ich lege mein Ohr an die Tür und lausche. Im Inneren herrscht Stille. Dann plötzlich ertönt ein leises Schaben und Kratzen, als scharrten Nägel auf Holz. 
+house_0> Zurück
+house_5> Das klingt, als bräuchte jemand Hilfe. Ich nahm Schwung und trat wuchtig gegen die Tür. 
+
+#house_4
+Das zerbrochene Butzenglas erlaubte mir einen Blick in einen leeren, stuabigen Hausflur. Glasscherben und zerbrochene Flaschen lagen auf dem Boden verstreut, die Tapete an den Wänden rollte sich und Schimmel verunzierte die Fußleisten. 
+house_0> Zurück
+
+#house_5
+Mir reicht's! Ich trete mit Schmackes gegen die Tür und sie gibt unter dem heftigen Aufprall nach. Die Angeln brechen mit dem nervenzerfetzenden geräusch reißenden Stahls, ehe das ganze Ding nach innen kippt. 
+Vor mir liegt der Hausflur, schmutzig und verfallen, Leere Flaschen rollen beiseite, als ich einen Schritt hinein mache. 
+house_6> Ich trete ein. 
+house_7> Ich lausche auf eine Reaktion. 
+house_8> Ich habe ein böses Gefühl, darum greife ich zum Revolver. 
+
+
+#house_6
+Im Flur roch es muffig und ein vager Dunst von Erbrochenem hing in der Luft. Zur Rechten führte eine Holztreppe ins obere Stockwerk, vermutlich den Dachboden, denn von außen betrachtet war schwerlich Platz für einen zweiten Stock gewesen. der Flur endete an zwei Türen, eine direkt voraus, eine linkerhand. 
+house_9> Ich erklomm die Treppe. 
+house_10> Ich nahm die Tür am rückwärtigen Ende. 
+house_11> Ich nahm die Tür zur Linken. 
+
+
+#house_7
+Als ich innehielt und lauschte, konnte ich ganz deutlich ein leises Scharren vernehmen. Möglicherweise nur Ungeziefer, aber meine Einbildungskraft machte daraus Fingernägel, die auf Holz kratzten. 
+house_6> Ich tat ein paar weitere Schritte. 
+
+#house_8
+Die waffe war geladen und feuerbereit. 
+firing_0> Ich gab einen Probeschuss ab. Ja, das erschien mir zu diesem Zeitpunkt sinnvoll. 
+house_6> Ich machte ein paar weitere Schritte ins Innere. 
+
+#lockpicking_0
+Es gestaltete sich schwierig, der Schließmechanismus war so verrostet, dass er sich meinen bemühungen hartnäckig wiedersetzte. 
