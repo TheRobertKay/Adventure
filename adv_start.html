@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <script language="javascript" type="text/javascript" src="adv_script.js"></script>
+    <link rel="stylesheet" href="adv_style.css">
+  </head>
+  <body>
+    
+    
+    
+    
+    <div class="DisplayContainer" id="MainContainer">
+      <img class="ImageDisplay" src="Images/ellen-shelley-church-final-01.jpg">
+      <div class="TextDisplay" id="MainText">
+      <img src="Icons/gem.svg" style="display: inline; height: 20px; float: left;"/>
+      
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+        dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+        ipsum dolor sit amet. 
+      </div>
+    </div>
+      <div class="Choices" id="ChoiceContainer">
+      </div>
+      
+    <div class="StartWrapper">
+        <div class="InnerWrapper">
+            <label id="SaveLoader" for="#" >
+                <img src="Icons/bookmarklet.svg" />
+            </label>
+        </div>
+        
+        <div class="InnerWrapper">
+            <label id="FileLoaderDiv" for="FileLoader" >
+                <img src="Icons/dungeon-gate.svg" />
+            </label>
+        </div>
+        
+        <div class="InnerWrapper">
+            <label id="Credit" for="#" >
+                <img src="Icons/tombstone.svg" />
+            </label>
+        </div>
+        
+    </div>
+    
+    <input type="file" id="FileLoader" onchange="getFiles();"/>
+    <div id="Navbar" class="Navigation">
+        <img id="SaveIcon" src="Icons/bookmark.svg" onclick="saveTextAsFile();" />
+        
+    </div>
+    
+  </body>
+  
+</html>
