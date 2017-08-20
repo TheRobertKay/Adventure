@@ -1,0 +1,31 @@
+Gewalt gegen Unbelebtes:
+	Der Spieler kann Türen, Container und dergleichen aufbrechen oder Objekte zerstören, die er physisch vor sich hat. Hierüber wird auch das Legen eines Feuers abgewickelt. 
+	Im Spielfluss bietet das Spiel dem Spieler automatisch die Option "Versuche es mit Gewalt" (klangvollere Bezeichnung erwünscht). 
+	Erforderlich ist im Script die Abfrage, ob die Probe sich auf eine körperliche oder eine geistige Leistung bezieht, ob also mittels physischer Kraft oder zB chemischer Mittel Gewalt ausgeübt werden soll. Abhängig von dieser Unterscheidung werden unterschiedliche Werte abgefragt. 
+	Sind beide Wege denkbar, führt die Option "Versuche es mit Gewalt" zu zwei Optionen, die jeweils andere Werte abfragen. 
+	Wenn unterschiedliche Herangehensweisen im gleichen Bereich denkbar sind (etwa Rohe Kraft im Unterschied zu einem geschickt genutzten Hebel) wird automatisch immer das höchste Attribut genommen, das zur Verfügung steht. 
+	
+Gewalt gegen Belebtes(kein Kampf): 
+	Ein Gegenüber soll gestoßen oder geschlagen, vielleicht aber auch nur verbal eingeschüchtert werden. Ob Mensch oder Tier ist dabei egal. Sind sowohl physische, als auch verbale oder sonstige Mittel möglich, führt die Option "Lege die Samthandschuhe ab" (treffendere Bezichnung erwünscht) zu zwei Optionen, die jeweils unterschiedliche Werte abfragen. Sind dabei mehrere der gleichen Art möglich, wird automatisch der höchste verfügbare Wert gewählt. 
+	Falls es noch nicht aufgefallen ist: Es verhält sich alles nicht wesentlich anders als bei Unbelebtem, außer dass die Reaktion llänger und komplexer ausfällt, etwa in Form eines neuen Gesprächszweiges oder eines Kampfes. 
+	
+Kampf: 
+	Der Spieler soll seine Vorgehensweise wählen und eine relative Erfolgsaussicht abschätzen können. Letztere wächst mit verstreichender Zeit im Kampf. Darüber hinaus wird eine Schleife solange abgewickelt, bis einer der Kontrahenten tot oder kampfunfähig ist oder eine auflösende Bedingung erfülllt wurde (etwa eine schwere Verletzung bei einem Nicht-Profi, ein Schuss, der den Kampf auflöst oder ein anderer NPC, der dazwischen geht). Jede Iteration stellt eine Kampfrunde dar. 
+	
+Fähigkeitenabfragen:
+	Der Spieler kann seine angeborenen oder erworbenen Fähigkeiten nutzen, um beispielsweise ein Schloss zu knacken oder eine Hauswand hinaufzuklettern. 
+	
+Inventar: 
+	Der Spieler kann auf sein Inventar zugreifen, das alle Gegenstände enthält, die er besitzt. 
+	Das Inventar ist in unterschiedliche Abschnitte gegliedert, etwa getragene Kleidung und darin befindliche Taschen, Rucksack und Notizbuch. Diese Abschnitte können separat angesteuert werden, etwa wenn dem Spieler der Rucksack verloren geht oder abgenommen wird. 
+	
+		Notizbuch(eher in modernen oder postmodernen Settings sinnvoll):
+			Das Buch stellt ein Item dar, in dem der Spieler einen String eintragen kann. Die Darstellung erfolgt über Seiten, wenn also eine gewisse Anzahl Zeichen erreicht wurde, wird die nächste Seite beschriftet. 
+			Sowohl das Schreiben, als auch das Lesen ist nur möglich, solange der Spieler das Item "Notizbuch" im Inventar trägt. 
+			Ein nachträgliches Löschen von Zeichen ist nicht möglich, das Geschriebene kann lediglich markiert werden, indem der Spieler es durchstreicht. Alternativ kann er Seiten herausreißen. 
+			Das Spiel kann das Notizbuch durchsuchen und auf einen bestimmten String prüfen, etwa wenn ein NPC darin liest. Die Reaktionen auf solche Einblicke sind davon abhängig, welche Stichworte gefunden werden, will der Spieler seine Aufzeichnungen verschlüsseln, muss er das tatsächlich tun. 
+			
+Attribute/Fertigkeiten/Skills und Skillsets:
+	Der Spieler startet mit allen Attributen auf einem gewissen Wert, der sich im Laufe des Spiels verändern kann. Diese Änderungen sind sowohl nach oben, als auch nach unten möglich. Die Attribute sind die Besis bei allen Abfragen, die zB Gewaltausübung, Kampf oder konkrete Probleme und Fähigkeitenabfragen adressieren. 
+	
+	

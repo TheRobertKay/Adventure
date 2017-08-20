@@ -1,35 +1,11 @@
 #house_0
 Der Abend ist hereingebrochen und die Dunkelheit unter den Bäumen verdichtet sich. Nur mit Mühe kannst du das niedrige Gebäude ausmachen, das sich langsam aus dem Schatten schält. 
+
 house_1>Ich gehe darauf zu und klopfe an die Tür.  
 house_2>Ich versuche, die Tür zu öffnen.
 house_3>Ich lausche an der Tür. 
 house_4>Ich spähe durch das kaputte Fenster. 
 house_5>Ich versuche, die Tür einzutreten.
-
-#house_1
-Din Klopfen hallt dumpf und verzerrt im Inneren des Hauses wider. Es ertönt keine Antwort. 
-house_0>Ich stehe immer noch vor der Tür.
-
-#house_2
-Ich kauere mich vor der Tür hin und versuche, dem Schloss mit meinen Dietrichen beizukommen. 
-lockpicking_0> Es war knifflig.
-
-
-#house_3
-Ich lege mein Ohr an die Tür und lausche. Im Inneren herrscht Stille. Dann plötzlich ertönt ein leises Schaben und Kratzen, als scharrten Nägel auf Holz. 
-house_0> Zurück
-house_5> Das klingt, als bräuchte jemand Hilfe. Ich nahm Schwung und trat wuchtig gegen die Tür. 
-
-#house_4
-Das zerbrochene Butzenglas erlaubte mir einen Blick in einen leeren, stuabigen Hausflur. Glasscherben und zerbrochene Flaschen lagen auf dem Boden verstreut, die Tapete an den Wänden rollte sich und Schimmel verunzierte die Fußleisten. 
-house_0> Zurück
-
-#house_5
-Mir reicht's! Ich trete mit Schmackes gegen die Tür und sie gibt unter dem heftigen Aufprall nach. Die Angeln brechen mit dem nervenzerfetzenden geräusch reißenden Stahls, ehe das ganze Ding nach innen kippt. 
-Vor mir liegt der Hausflur, schmutzig und verfallen, Leere Flaschen rollen beiseite, als ich einen Schritt hinein mache. 
-house_6> Ich trete ein. 
-house_7> Ich lausche auf eine Reaktion. 
-house_8> Ich habe ein böses Gefühl, darum greife ich zum Revolver. 
 
 
 #house_6
@@ -51,5 +27,77 @@ house_6> Ich machte ein paar weitere Schritte ins Innere.
 #lockpicking_0
 Es gestaltete sich schwierig, der Schließmechanismus war so verrostet, dass er sich meinen bemühungen hartnäckig wiedersetzte. 
 
-Whoooza
+#house_0
+Das Haus lag stumm und verlassen da. (Schlechter Zustand, Verwahrlosung)
 
+house_1>Ich ging darauf zu und klopfte an die Tür.  
+house_2>Ich versuchte, die Tür zu öffnen. (Methode lockpicking erstellen)
+house_3>Ich lauschte an der Tür. (Methode Sinnesschärfe erstellen)
+house_4>Ich spähte durch das kaputte Fenster. 
+house_5>Ich versuchte, die Tür einzutreten. (Methode Gewalt gegen Unbelebtes erstellen)
+house_6> Ich umrundete das verfallene Gebäude. 
+
+	#house_1
+	Mein Klopfen hallte im Inneren des Gebäudes wider und weckte unwillkürlich den Gedanken an eine Gruft. 
+	house_0> Zurück
+	
+	#house_2
+	Ich ließ mich auf die Knie nieder und versuchte, dem Türschloss mit meinen Dietrichen beizukommen, doch der Mechanismus war so verrostet, dass ich Schwierigkeiten hatte, den Zylinder überhaupt zu bewegen. 
+	house_0> Zurück
+	
+	#house_3
+	Im Flur war alles still, doch gerade, als ich mich wieder aufrichten wollte, hörte ich ein leises Geräusch. Es war schwer auszumachen, worum es sich handelte, ein leises Kratzen und Schaben, wie von Ratten in den Wänden. 
+	house_0> Zurück
+
+	#house_4
+	Durch die blinden, zerbrochenen Fenster erstreckte sich das Bild offenkundiger Verwahrlosung auch ins Innere des schäbigen Backsteinbaus. Zerbrochene Flaschen und schmutziges Geschirr stapelten sich im Flur, Haufen zerfledderter Zeitungen säumten die Wände, von denen sich die verschimmelte Tapete in Streifen abschälte. 
+	house_0> Zurück
+
+	#house_5 
+	Ich nahm einen Schritt Anlauf und trat mit Schwung gegen die Tür. (Gewalt gegen Unbelebtes) Sie gab mit lautem Poltern nach und brach aus den altersschwachen Angeln. Sie fiel zu Boden und es klirrte, als etliche Flaschen dem Holz weichen mussten. 
+	
+		house_8> Ich wartete ab und lauschte erneut. Womöglich hatte der Lärm jemanden im Inneren aufgestört. (Methode Sinnesschärfe)
+		house_9> Ich machte einen Schritt in den verwahrlosten Hausflur. 
+		inventory_0> Ich griff nach meiner Tasche. 
+		
+	#house_6
+	Die rückwärtige Seite des grundstücks war durch einen hohen Maschendrahtzaun versperrt und innenseitig mit morschen Brettern und Pappe so weit ausgekleidet, dass man nur mit Mühe hinein sehen konnte. Ein Tor oder eine Tür war nicht zu sehen, doch mir zog ein durchdringender Modergeruch in die Nase. 
+	
+		backyard_0> Ich stieg über den Zaun. 
+		house_0> Ich zog es vor, mich wieder zur Vordertür zu begeben. 
+		house_7> Ich drückte mit dem Finger ein kleines Loch in die modrige Pappe und spähte hindurch. 
+		
+	#house_7
+	Durch die kleine Öffnung konnte ich einen sporadisch gepflasterten Innenhof erkennnen. Ein baufälliger Schuppen und ein niedriges Silo standen darin, allenthalben stand Gerümpel herum, größtenteils wohl alte Werkzeuge. Ich konnte eine Egge erkennen, ein paar Harken, Schaufeln und Spaten, ein Beil und die Hälfte eines zerbrochenen Pfluges. 
+		
+		backyard_0> Ich stieg über den Zaun. 
+		house_0> Ich zog es vor, mich wieder zur Vordertür zu begeben. 
+	
+	#house_8
+	Abermals ertönte das Kratzen und Schaben, doch diesmal klang es lauter und ein undeutlichhes gemurmel mischte sich darunter, als spräche jemand mit der Hand vor dem Mund. 
+		inventory_0> Ich griff nach meiner Tasche. 
+		house_9> Ich machte einen Schritt in den verwahrlosten Hausflur. 
+		giveup_0> Ich beschloss, dass mir das ganze doch nicht geheuer war. Ich zog mich zurück und ging zu meinem Auto. Sollten sich die örtlichen behörden um das Problem kümmern, ich hatte damit nichts zu schaffen. 
+		
+	
+	
+	
+#backyard_0
+Mit etwas Mühe gelang es mir, über den Zaun zu steigen und ich schwang mich in den Hof hinein. 
+	(Wenn nicht durch das Loch gespäht: Ich fand mich in einem sporadisch gepflasterten Hinterhof wider, der neben reichlich Gerümpel einen Schuppen und ein Silo enthielt. Ich erkannnte eine Egge, die zerbrochenen Reste eines Pfluges und etliche Gartengeräte in schlechtem Zustand. )
+Der Gestank war hier noch intensiver. Er schien von einem runden Brunnenschacht auszugehen, der in einer Ecke des Hofes aus Beton angelegt und mit einer hölzernen Platte abgedeckt worden war. An der rückwärtigen Seite des Hofes befand sich die Haustür, anscheinend der einzige Zugang zum Hof. 
+	house_7> Ich kletterte wieder über den Zaun. 
+	backyard_1> Ich sah mich genauer um. (Methode Sinnesschärfe)
+	backyard_2> Ich ging zur Hintertür. 
+	backyard_3> Ich trat an den Schuppen heran. 
+	backyard_4> Ich besah mir das Gerümpel. 
+	backyard_5> Ich nahm das Silo in Augenschein. 
+	backyard_6> Ich untersuchte den Brunnen. 
+	
+#inventory_0 (Methode Inventar erstellen)
+	Taschenlampe hervorholen
+	Revolver hervorholen
+	Zurück
+	
+#giveup_0
+	Du hast aufgegeben, bevor das Abenteuer richtig begonnen hat. Deinetwegen passieren schreckliche Dinge. Und obendrein hast du verloren. Schäm dich!
