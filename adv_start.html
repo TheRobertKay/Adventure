@@ -32,48 +32,30 @@
       <div class="Choices" id="ChoiceContainer">
       </div>
       
-    <div class="StartWrapper">
-        <div class="InnerWrapper">
-            <label id="SaveLoader" for="#" >
-                <img src="Icons/bookmarklet.svg" />
-            </label>
-        </div>
-        
-        <div class="InnerWrapper">
-            <label id="FileLoaderDiv" for="FileLoader" >
-                <img src="Icons/dungeon-gate.svg" />
-            </label>
-        </div>
-        
-        <div class="InnerWrapper">
-            <label id="Credit" for="#" >
-                <img src="Icons/tombstone.svg" />
-            </label>
-        </div>
-        
-    </div>
     
+    <div id="StartIcons">    
+    <label id="Credit" for="#" >
+        <img src="Icons/tombstone.svg" />
+        
+    </label>
+
+    <label id="FileLoaderDiv" for="FileLoader" >
+        <img src="Icons/dungeon-gate.svg" />
+    </label>
+    
+    <label id="SaveLoaderDiv" for="SaveLoader" >
+        <img src="Icons/bookmarklet.svg" id="SaveLoaderIcon" />
+    </label>
+
+    </div>    
+        
+    
+    <input type="file" id="SaveLoader" onchange="getSave();"/>
     <input type="file" id="FileLoader" onchange="getFiles();"/>
     <div id="Navbar" class="Navigation">
         <img id="SaveIcon" src="Icons/bookmark.svg" onclick="saveTextAsFile();" />
         
     </div>
-	
-	<div id="creditContent">
-	<P><H1><BOLD><TEXT-ALIGN: center> Adventure for petty Noobs</BOLD> </H1></P>
-	Ich wette, Ihr dachtet, das wäre alles gewesen.... Aber nein, Ihr müsst noch durch die nur mäßig interessanten Credits, ehe Ihhr entlassen seid. Es wird nicht aufhören, ehe Ihr endgültig durch seid. Keine Chance!<BR><BR><BR>
-	
-	Besonderer Dank geht zunächst mal an: <BR>
-	Robert Kleinhans, der tatsächlich programmmieren kann. Sonst stünden hier nur die Credits. Ohne Spiel. <BR><BR>
-	Vincent Kreuziger, der den maßgeblichen Content geliefert hat. Und dessen ideen auf Dauer wahrscheinlich schuld daran sind, falls du aufhörst zu spielen. <BR><BR>
-	Daniel Steinmetz, dessen unermüdliches Prokrastinationsverhalten dazu führte, dass der Schwerpunkt des Projekts erheblich verlagert wurde. Dieses Spiel wäre mit einem zuverlässigeren Unterstützer nicht möglich gewesen. <BR><BR><BR>
-	
-	Hier kommmen alle weiteren rein, die mehr oder weniger beigetragen haben. <BR><BR>
-	
-	Und hier kommt unser Dank an diejenigen rein, deren Ressourcen wir kostenfrei nutzen durften. Wer für ein tool Geld verlangt, erhält keinen Dank, der wurde schließlich bezahlt. <BR><BR>
-	
-	Und hier kommen die Namen derer rrein, die in sonstiger Weise bei der Gestaltung des Spiels geholfen haben, etwa durch Artworks, Sounddesign oder kreativen Input. <BR><BR><BR
-	</div>
     
   </body>
   

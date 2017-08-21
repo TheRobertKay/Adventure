@@ -1,6 +1,8 @@
 var MAIN_CONTENT;
+var SAVE_CONTENT;
 var CONTENT_PARSED = [];
 var CURRENT_LOC;
+var SAVE_HEADER = "NA";
 
 function changeBackground() {
     document.getElementsByTagName("body")[0].style.background = "url(Images/ruslan-kim-4.jpg) no-repeat center center fixed";
@@ -60,10 +62,27 @@ function addContent(id) {
     
 }
 
+function getSave() {
+    var choiceHolder;
+    myFileList = document.getElementById("SaveLoader");
+    
+    for (var i = 0; i < myFileList.files.length; i++) {
+        
+        var file = myFileList.files[0],read = new FileReader();
+
+        read.readAsBinaryString(file);
+
+        read.onloadend = function(){
+            SAVE_CONTENT = read.result;
+            restoreSave(SAVE_CONTENT);
+        }
+                
+    }
+}
+
 
 function getFiles() {
     var choiceHolder;
-    
     myFileList = document.getElementById("FileLoader");
     
     for (var i = 0; i < myFileList.files.length; i++) {
@@ -75,17 +94,31 @@ function getFiles() {
         read.onloadend = function(){
             MAIN_CONTENT = read.result;
             parseContent(MAIN_CONTENT);
-            CURRENT_LOC = CONTENT_PARSED[0];
             
-            var final_content = "";
-            for (var j = 0; j < CONTENT_PARSED[0].content.length; j++) {
-                final_content += CONTENT_PARSED[0].content[j] + "<br/>";
+            if(SAVE_HEADER === "NA") {
+                CURRENT_LOC = CONTENT_PARSED[0];
+            } else {
+                for(var j = 0; j < CONTENT_PARSED.length; j++) {
+                    if(SAVE_HEADER === CONTENT_PARSED[j].header) {
+                        CURRENT_LOC = CONTENT_PARSED[j];
+                        break;
+                    }
+                }
+                if(CURRENT_LOC.length == 0) {
+                    CURRENT_LOC = CONTENT_PARSED[0];
+                }
             }
             
-            for (var j = 0; j < CONTENT_PARSED[0].choices.length; j++) {
+            
+            var final_content = "";
+            for (var j = 0; j < CURRENT_LOC.content.length; j++) {
+                final_content += CURRENT_LOC.content[j] + "<br/>";
+            }
+            
+            for (var j = 0; j < CURRENT_LOC.choices.length; j++) {
                 var node = document.createElement("p");
                 node.className = "TextBlock";
-                choiceHolder = CONTENT_PARSED[0].choices[j];
+                choiceHolder = CURRENT_LOC.choices[j];
                 node.innerHTML = choiceHolder.substring(choiceHolder.indexOf(">")+1,choiceHolder.length);
                 node.id = (j+1).toString();
                 node.onclick = function() {
@@ -146,9 +179,28 @@ function parseContent(content) {
     }
 }
 
+function restoreSave(content) {
+    if(!content.startsWith("SAVE")) {
+        alert("Invalid or corrupted savefile!");
+        return;
+    }
+    var parts = content.trim().split(">");
+    if(parts[1] === "") {
+        alert("Invalid or corrupted savefile!");
+        return;
+    } else {
+        SAVE_HEADER = parts[1];
+        document.getElementById("SaveLoaderIcon").style.boxShadow = "0px 0px 8px 8px #D4B037";
+    }
+    
+}
+
 function saveTextAsFile()
 {
-    var text = "the content we need!";
+    var text = "SAVE>";
+    text += CURRENT_LOC.header;
+    
+    
     var currentdate = new Date(); 
     var datetime = currentdate.getDate() + "/"
                 + (currentdate.getMonth()+1)  + "/" 
