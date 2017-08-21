@@ -1,0 +1,75 @@
+{
+    "nodes": [
+        {
+            "name": "Eisenerz",
+            "amount": 0,
+            "production": 7,
+            "price": 1,
+            "connections": [
+                {
+                    "target": 3,
+                    "weight": 5.0
+                }
+            ]
+        },
+        {
+            "name": "...",
+            "amount": 0,
+            "production": 7,
+            "price": 1,
+            "connections": [
+                {
+                    "target": 3,
+                    "weight": 5.0
+                },
+                {
+                    "target": 4,
+                    "weight": 5.0
+                }
+            ]
+        },
+        {
+            "name": "node_2",
+            "amount": 0,
+            "production": 7,
+            "price": 1,
+            "connections": [
+                {
+                    "target": 4,
+                    "weight": 5.0
+                }
+            ]
+        },
+        {
+            "name": "node_3",
+            "amount": 0,
+            "production": 7,
+            "price": 1,
+            "connections": [
+                {
+                    "target": 5,
+                    "weight": 5.0
+                }
+            ]
+        },
+        {
+            "name": "node_4",
+            "amount": 0,
+            "production": 7,
+            "price": 1,
+            "connections": [
+                {
+                    "target": 5,
+                    "weight": 5.0
+                }
+            ]
+        },
+        {
+            "name": "node_5",
+            "amount": 0,
+            "production": 7,
+            "price": 1,
+            "connections": []
+        }
+    ]
+}
