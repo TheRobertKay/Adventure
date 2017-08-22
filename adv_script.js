@@ -4,6 +4,15 @@ var CONTENT_PARSED = [];
 var CURRENT_LOC;
 var SAVE_HEADER = "NA";
 var BACKGROUND_BLOCKED = false;
+var CURRENT_OPEN = "Start";
+
+
+// BEGIN CHARAKTER
+var CHAR_MONEY = 0;
+var CHAR_EXP = 0;
+var CHAR_KARMA = 0;
+
+// END CHARAKTER
 
 function changeBackground() {
     document.getElementsByTagName("body")[0].style.background = "url(Images/ruslan-kim-4.jpg) no-repeat center center fixed";
@@ -83,25 +92,48 @@ function getSave() {
 }
 
 function displayInventory() {
+    
     document.getElementById("Inventory").style.display = "inline";
     document.getElementById("BackgroundBlock").style.display = "inline";
+    /*
+    CHAR_MONEY = 1234;
+    // 123456789
+ 
+    var gulden = Math.floor((CHAR_MONEY/2000/1000/200/100)); // 1 = 100 silber
+    var silber = Math.floor((CHAR_MONEY/2000/1000/200))%100; // 1 = 2 hacksilber
+    var hacksilber = Math.floor((CHAR_MONEY/2000/1000))%200; // 1 = 5 kupfer
+    var kupfer = Math.floor((CHAR_MONEY/2000))%1000; // 1 = 2 pfennige
+    var pfennige = CHAR_MONEY % 2000;
+    alert(pfennige);
+    alert(kupfer);
+    alert(hacksilber);
+    alert(silber);
+    alert(gulden);
+    */
     BACKGROUND_BLOCKED = true;
+    CURRENT_OPEN = "Inventory";
+    
 }
 
 function showCredits() {
     document.getElementById("CreditContent").style.display = "inline";
     document.getElementById("StartIcons").style.display = "none";
+    BACKGROUND_BLOCKED = true;
+    CURRENT_OPEN = "Credit";
 }
 
 function creditReturn() {
     document.getElementById("StartIcons").style.display = "inline";
     document.getElementById("CreditContent").style.display = "none";
+    BACKGROUND_BLOCKED = false;
+    CURRENT_OPEN = "Start";
 }
 
 function inventoryReturn() {
     document.getElementById("Inventory").style.display = "none";
     document.getElementById("BackgroundBlock").style.display = "none";
     BACKGROUND_BLOCKED = false;
+    CURRENT_OPEN = "Main";
 }
 
 function getFiles() {
@@ -115,6 +147,7 @@ function getFiles() {
         read.readAsBinaryString(file);
 
         read.onloadend = function(){
+            CURRENT_OPEN = "Main";
             MAIN_CONTENT = read.result;
             parseContent(MAIN_CONTENT);
             
@@ -259,17 +292,27 @@ function destroyClickedElement(event)
 	document.body.removeChild(event.target);
 }
 
-//document.onkeypress = function(e) {
 document.onkeydown = function(e) {
     e = e || window.event;
     var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
     if (charCode) {
         if(BACKGROUND_BLOCKED == false) {
             var cont = String.fromCharCode(charCode);
-            option(document.getElementById(cont),cont);
+            if(CURRENT_OPEN === "Main") {
+                if(cont === "I") {
+                    displayInventory();
+                } else {
+                    option(document.getElementById(cont),cont);
+                }
+            }
         } else {
             if(charCode === 27) {
-                inventoryReturn();
+                if(CURRENT_OPEN === "Inventory") {
+                    inventoryReturn();
+                } else if (CURRENT_OPEN === "Credit") {
+                    creditReturn();
+                }
+                
             }
         }
     }

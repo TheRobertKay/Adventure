@@ -156,6 +156,10 @@ input[type='file'] {
     -ms-user-select: none; /* IE10+ */
 }
 
+.InventoryTable tr td{
+    padding: 10px;
+}
+
 .BackgroundBlock {
     position: fixed;
     background: rgba(77, 74, 89, .5);

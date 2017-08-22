@@ -89,12 +89,26 @@
     
     <div id="BackgroundBlock" class="BackgroundBlock" style="display: none">
         <div id="Inventory" class="Inventory" style="display: none">
-            <h2>Inventar</h2>
-            <table>
+            <h1>Inventar</h1>
+            <table class="InventoryTable">
                 <tr>
-                    <td>Geld</td>
-                    <td>100</td>
+                    <td>Geldbeutel</td>
+                    <td id="Gulden">0</td>
+                    <td id="Silber">0</td>
+                    <td id="Kupfer">0</td>
                 </tr>
+                <tr>
+                    <td>Erfahrung</td>
+                    <td id="Exp">0</td>
+                </tr>
+                <tr>
+                    <td>Karma</td>
+                    <td id="Karma">0</td>
+                </tr>
+            </table>
+            <h1>Gegenstände</h1>
+            <table>
+            
             </table>
             <hr>
             <label id="InventoryReturn" onclick="inventoryReturn();">
