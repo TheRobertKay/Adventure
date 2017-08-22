@@ -54,7 +54,7 @@
     <input type="file" id="FileLoader" onchange="getFiles();"/>
     <div id="Navbar" class="Navigation">
         <img id="SaveIcon" src="Icons/bookmark.svg" onclick="saveTextAsFile();" />
-        <img id="InventaryIcon" src="Icons/backpack.svg" onclick="#" />
+        <img id="InventaryIcon" src="Icons/backpack.svg" onclick="displayInventory();" />
         
     </div>
     
@@ -79,9 +79,22 @@
         </label>
     </div>
     
-    <div class="Inventory" style="display: none">
+    <!--
+    <div id="Inventory" class="Inventory" style="display: none">
         <div>Money in da Bank</div>
     </div>
+    -->
+    
+    
+    <div id="BackgroundBlock" class="BackgroundBlock" style="display: none">
+        <div id="Inventory" class="Inventory" style="display: none">
+            <div>Money in da Bank</div>
+            <label id="InventoryReturn" onclick="inventoryReturn();">
+                <img src="Icons/cross-shield.svg">
+            </label>
+        </div>
+    </div>
+    
     
   </body>
   

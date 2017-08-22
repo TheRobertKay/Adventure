@@ -3,6 +3,7 @@ var SAVE_CONTENT;
 var CONTENT_PARSED = [];
 var CURRENT_LOC;
 var SAVE_HEADER = "NA";
+var BACKGROUND_BLOCKED = false;
 
 function changeBackground() {
     document.getElementsByTagName("body")[0].style.background = "url(Images/ruslan-kim-4.jpg) no-repeat center center fixed";
@@ -81,6 +82,12 @@ function getSave() {
     }
 }
 
+function displayInventory() {
+    document.getElementById("Inventory").style.display = "inline";
+    document.getElementById("BackgroundBlock").style.display = "inline";
+    BACKGROUND_BLOCKED = true;
+}
+
 function showCredits() {
     document.getElementById("CreditContent").style.display = "inline";
     document.getElementById("StartIcons").style.display = "none";
@@ -89,6 +96,12 @@ function showCredits() {
 function creditReturn() {
     document.getElementById("StartIcons").style.display = "inline";
     document.getElementById("CreditContent").style.display = "none";
+}
+
+function inventoryReturn() {
+    document.getElementById("Inventory").style.display = "none";
+    document.getElementById("BackgroundBlock").style.display = "none";
+    BACKGROUND_BLOCKED = false;
 }
 
 function getFiles() {
@@ -250,7 +263,9 @@ document.onkeypress = function(e) {
     e = e || window.event;
     var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
     if (charCode) {
-        var cont = String.fromCharCode(charCode)
-        option(document.getElementById(cont),cont);
+        if(BACKGROUND_BLOCKED == false) {
+            var cont = String.fromCharCode(charCode);
+            option(document.getElementById(cont),cont);
+        }
     }
 }
