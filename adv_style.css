@@ -101,6 +101,47 @@ input[type='file'] {
     -ms-user-select: none; /* IE10+ */
 }
 
+#CreditReturn {
+    padding-left: 37.5%;
+}
+
+#CreditReturn img {
+    
+    width: 20%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #4d4A59;
+    border-width: 3px;
+}
+
+#CreditReturn img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.CreditContent {
+    position: absolute;
+    background-color: #4d4A59;
+    padding: 10px;
+    opacity: 0.9;
+    top: 10%;
+    left: 30%;
+    width: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+
+.Inventory {
+
+}
+
 .Navigation {
     display: none;
     position: fixed;
@@ -117,6 +158,9 @@ input[type='file'] {
 .Navigation  img {
     display: inline;
     border-radius: 50%;
+    border-style: solid;
+    border-color: #4d4A59;
+    border-width: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

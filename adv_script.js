@@ -50,7 +50,8 @@ function addContent(id) {
         var node = document.createElement("p");
         node.className = "TextBlock";
         choiceHolder = CURRENT_LOC.choices[j];
-        node.innerHTML = choiceHolder.substring(choiceHolder.indexOf(">")+1,choiceHolder.length);
+        node.innerHTML = (j+1).toString() + ". ";
+        node.innerHTML += choiceHolder.substring(choiceHolder.indexOf(">")+1,choiceHolder.length);
         node.id = (j+1).toString();
         node.onclick = function() {
             option(this,this.id);
@@ -80,6 +81,15 @@ function getSave() {
     }
 }
 
+function showCredits() {
+    document.getElementById("CreditContent").style.display = "inline";
+    document.getElementById("StartIcons").style.display = "none";
+}
+
+function creditReturn() {
+    document.getElementById("StartIcons").style.display = "inline";
+    document.getElementById("CreditContent").style.display = "none";
+}
 
 function getFiles() {
     var choiceHolder;
@@ -119,7 +129,8 @@ function getFiles() {
                 var node = document.createElement("p");
                 node.className = "TextBlock";
                 choiceHolder = CURRENT_LOC.choices[j];
-                node.innerHTML = choiceHolder.substring(choiceHolder.indexOf(">")+1,choiceHolder.length);
+                node.innerHTML = (j+1).toString() + ". ";
+                node.innerHTML += choiceHolder.substring(choiceHolder.indexOf(">")+1,choiceHolder.length);
                 node.id = (j+1).toString();
                 node.onclick = function() {
                     option(this,this.id);
