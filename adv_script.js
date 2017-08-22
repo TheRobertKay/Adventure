@@ -259,13 +259,18 @@ function destroyClickedElement(event)
 	document.body.removeChild(event.target);
 }
 
-document.onkeypress = function(e) {
+//document.onkeypress = function(e) {
+document.onkeydown = function(e) {
     e = e || window.event;
     var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
     if (charCode) {
         if(BACKGROUND_BLOCKED == false) {
             var cont = String.fromCharCode(charCode);
             option(document.getElementById(cont),cont);
+        } else {
+            if(charCode === 27) {
+                inventoryReturn();
+            }
         }
     }
 }
