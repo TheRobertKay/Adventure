@@ -1,0 +1,32 @@
+
+
+	#Elderman_0
+	Hallo, ich bin der Schulze, auch wenn die Übersetzung nicht wirklich akkurat ist, aber nahe genug dran. Das reicht als Beispieltext, hier setze ich noch eine Variable runter: 
+		~ Gulden = Gulden - 1
+	Ich kann dir nämlich einfach Geld abnehmen, wenn ich will. Und du kannst nichts dagegen tun. Dafür kriegst du ein paar Optionen:
+	
+		Elderman_1+> Hier die erste. Sie ist die einzige Option, die du jedes Mal an dieem Knoten wieder wählen kannst. Alle anderen lassen sich nur einmal wählen. 
+		Elderman_2> (Gulden >= 5) Da die zweite. Die ist nur verfügbar, wenn man mindestens fünf Gulden im Beutel hat.
+		Elderman_3> Und noch die Dritte, just for good measure. 
+		
+	#Elderman_1
+	Hier kannste immer hin. 
+	(gender == male) Diese Zeile siehst du nur als Mann. 
+	{weder (A) noch (B) noch (C)} Wenn du eine der drei Bedingungen A, B und C erfüllst, egal welche, dann kriegst du die hier niemals zu sehen. 
+	{(A) oder (B) oder (C)} Diese Zeile wird dir nur angezeigt, wenn du mindestens eine der Bedingungen A, B und C erfüllst.
+	{!(A) oder (B) oder (C)} Diese Zeile wird dir nur angezeigt, wenn du genau so viele der Bedingungen A, B und C erfüllst, wie Ausrufezeichen in der Klammer stehen. 
+	
+		Elderman_0> Hier geht's zurück. 
+		Elderman_2> (Elderman_3) Diese Option kannst du erst wählen, wenn du den Knoten Elderman_3 mindestens einmal besucht hast. 
+		Elderman_2> (Elderman_3 >= 4) Und diese geht erst, wenn du den Knoten Elderman_3 mindestens viermal besucht hast. Dient dann der Intensivierung, wenn sich das gespräch immerzu wiederholt. 
+	
+	#Elderman_2
+	Hier haben wir ein bisschen Inline-Logik, denn der folgende Text prüft dein Geschlecht. Du bist {gender == female: eine Frau|ein Mann}. Wenn die Variable gender bei dir weiblich ist, dann wird dir gesagt, dass du eine Frau ist, sonst ein Mann. Und das sollte auch mit beliebig vielen Angaben gehen: {gender == weiblich: Eine Frau| gender == männlich: Ein Mann| gender == unentschlossen: Ein Wesen unbestimmbaren Geschlechts} kam um die Ecke und fiel um. Ende der Geschichte, Gönn dir ne Option. 
+	
+		Elderman_0> Hier geht's zurück. 
+	
+		
+	
+	#Elderman_3
+	
+		

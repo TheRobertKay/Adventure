@@ -1,0 +1,424 @@
+#innkeeper_0
+"Grüße, Ich darf doch eintreten?"
+	
+	innkeeper_1> Er hat dich gerade bei etwas sehr Privatem gestört... "Raus hier! Sofort!"
+	innkeeper_2> "Guten Abend. Was gibt es?"
+	innkeeper_3> "Ich hatte ausdrücklich darum gebeten, nicht gestört zu werden."
+	innkeeper_4> "Was willst du?"
+	innkeeper_5> "Du führst doch die Schenke?"
+	
+	#innkeeper_1
+	"Verzeihung, hätte ich gewusst, dass Ihr..."
+		
+		innkeeper_6> "Sofort!"
+		
+	#innkeeper_2
+	"Nunja, der Schulze wünscht ein Gespräch mit Euch. Er sitzt unten und wartet." 
+		
+		innkeeper_7> "Wenn das so ist, werde ich ihn nicht warten lassen." 
+		innkeeper_8> "Der Schulze lässt nach mir schicken? Warum? Gibt es ein Problem?"
+		innkeeper_9> "Der aufgeblasene Knilch kann zu mir kommen, ich springe nicht, wenn er pfeift."
+		innkeeper_10> "Das kümmert mich ehrlich gesagt wenig. Ich habe in diesem Ort nichts zu schaffen und werde auch nicht so lange bleiben, dass es den Schulzen etwas anginge."
+		
+	#innkeeper_3
+	"Jawohl, Verzeihung, ich hätte Euch gewiss nicht behelligt, wenn es nicht nötig gewesen wäre. Darf ich um einen Augenblick Eurer Zeit bitten?"
+	
+		innkeeper_11> "Wo du schon einmal da bist, bleib."
+		innkeeper_6> "Ich bestehe auf meiner Ruhe. Verschwinde, ich werde nachher zu dir kommen."
+
+	#innkeeper_4
+	"Ihr kommt stets sehr rasch zur Sache, nicht wahr? Nunja, es gibt da eine Angelegenheit, in der man dringend um Eure Aufmerksamkeit bittet."
+		
+		innkeeper_2> "Was für eine Angelegenheit?"
+		innkeeper_6> "Im Augenblick habe ich keine Zeit. Verschwinde, ich kümmere mich später darum."
+		
+	#innkeeper_5
+	"Ja, ich kümmere mich um alles, solange mein Vater nicht da ist. Ihm gehören natürlich Haus und Hof, ich kann Euch mit allem versorgen."
+	
+		innkeeper_12> "Gut. Ich möchte das Zimmer noch ein wenig länger mieten."
+		innkeeper_13> "Sehr gut. Ich könnte eine anständige Mahlzeit vertragen."
+		innkeeper_14> "Mir ist einiges von meiner Ausrüstung verloren gegangen und ich müsste es ersetzen. Was hast du alles da?"
+			
+	#innkeeper_6
+	"Jawohl!"
+	END_0>  [Nichts sagen.]
+	
+	#innkeeper_7
+	"Das wird er sicherlich zu schätzen wissen. Bitte folgt mir."
+		
+		END_0> "Sicher, geh voran!" 
+		
+	#innkeeper_8
+	"Nun, ich weiß es natürlich nicht genau. Aber soweit ich gehört habe, haben die Bauern wohl Probleme. Sie verlangen nach einem Fachmann, einem Bestienjäger. Ihr seid doch einer, oder? Eure Familie ist schließlich nicht ganz unbekannt in dieser Gegend." 
+	
+		innkeeper_19> "Gut, ich dachte schon, es hätte etwas mit mir persönlich zu tun."
+		innkeeper_20> "Ja, meine Familie hat einen gewissen Ruf erworben. Wir haben es als unsere heilige Pflicht auserkoren, Menschen zu schützen und die Bestien der Wälder auszumerzen. Führ mich zum Schulzen, ich sollte ihn nicht warten lassen."
+		innkeeper_23> "Wieder einer. Ich habe es so satt, das alles. Hättest du nicht einfach den Mund halten können?"
+		innkeeper_25> "Ein Auftrag, natürlich. Aber lasst es mich gleich sagen: Ich habe meine Prinzipien."
+		innkeeper_31> "Umso schlimmer. Ich übe dieses Handwerk nicht länger aus."
+		
+	#innkeeper_9
+	"Oha. Nunja, ähhm... Ja. Ich werde es ihm ausrichten. Sofort. Kann ich sonst noch etwas für Euch tun? Braucht Ihr etwas?
+		
+		innkeeper_12> "Allerdings. Ich möchte das Zimmer noch ein wennig länger mieten."
+		innkeeper_13> "Ich könnte eine anständige Mahlzeit vertragen."
+		innkeeper_14> "Mir ist einiges von meiner Ausrüstung verloren gegangen und ich müsste es ersetzen. Was hast du alles da?"
+		
+	
+	#innkeeper_10
+	"Nun, in dem Fall... Kann ich Euch noch etwas bringen?"
+	
+		innkeeper_13> "Ich könnte eine anständige Mahlzeit vertragen."
+		innkeeper_14> "Mir ist einiges von meiner Ausrüstung verloren gegangen und ich müsste es ersetzen. Was hast du alles da?"
+
+	#innkeeper_11
+	"Ja, nochmals, entschuldigt. Der Schulze sitzt unten und erwartet Euch. 
+	
+		innkeeper_7> "Wenn das so ist, werde ich ihn nicht warten lassen." 
+		innkeeper_8> "Der Schulze lässt nach mir schicken? Warum? Gibt es ein Problem?"
+		innkeeper_9> "Der aufgeblasene Knilch kann zu mir kommen, ich springe nicht, wenn er pfeift."
+		innkeeper_10> "Das kümmert mich ehrlich gesagt wenig. Ich habe in diesem Ort nichts zu schaffen und werde auch nicht so lange bleiben, dass es den Schulzen etwas anginge."
+	
+	#innkeeper_12
+	"Selbstverständlich, sehr gerne. Wie lange gedenkt Ihr denn zu bleiben? Für das Zimmmer müsste ich Sechs Kupfermünzen die Nacht verlangen, ein leichtes Frühstück ist natürlich inbegriffen. 
+	(Nur beim ersten Mal) Ihr werdet wohl nicht in den Schlafsaal umziehen wollen, oder?"
+	
+		innkeeper_15> "Meine Barschaft ist gerade knapp. Angesichts der Umstände nehme ich auch den Schlafsaal, was kostet der?"
+		innkeeper_16> "Ich bleibe noch eine Nacht."
+		innkeeper_16> "Ich bleibe noch zwei Nächte."
+		innkeeper_16> "Ich bleibe noch fünf Nächte."
+		innkeeper_17> "Ich bleibe noch eine ganze Woche, stell dich schonmal darauf ein."
+		
+	#innkeeper_13
+	"Kein Problem, es ist mehr Braten da, als Ihr verdrücken könnt, verzeiht den Ausdruck. Soll ich Euch etwas herauf bringen oder möchtet Ihr unten speisen?"
+		
+		innkeeper_21> "Ich esse hier oben." 
+		innkeeper_20> "Wenn ich schon dabei bin, kann ich gleich unten essen und mir die Klagen des Schulzen anhören. Zwei Fliegen mit einer Klappe."
+		
+	#innkeeper_14
+	"Nunja, unsere Bestände sind ein wenig beschränkt, schließlich sind wir kein Pfandhaus, aber was da ist, könnt Ihr Euch gerne ansehen."
+		
+		TRADE_0> "Dann zeig mal her!"
+		innkeeper_22> "Lass gut sein. So dringend ist es nicht."
+		
+	#innkeeper_15
+	"Aber nicht doch, man hat nicht alle Tage solch berühmten Besuch. Ihr vertraue jederzeit auf Euren guten Namen, falls Ihr nicht die nötigen Münzen zur Hand habt. Soll ich es für Euch anschreiben?"
+	
+		innkeeper_12> "In dem Fall bleibe ich beim Zimmer."
+		innkeeper_18> "Ich bleibe nicht gerne etwas schuldig, auch wenn es nur ein paar Münzen sind."
+	
+	#innkeeper_16
+	"Also gut, dann schreibe ich den Betrag auf Eure Recchnung. Sechs Münzen die Nacht. Ich freue mich, dass Ihr noch ein wenig bleibt."
+	
+		innkeeper_0
+	
+	#innkeeper_17
+	"Eine ganze Woche? Na sowas, dann gebe ich gleich mal Hildrij Bescheid, dass sie zwischendurch Eure Laken wechselt. Ist uns eine Ehre, Euch so lange dazuhaben."
+		
+		innkeeper_10> Gut. Da wäre noch was. 
+		innkeeper_4> Gut. Warum bist du nochmal hereingeplatzt?
+	
+	#innkeeper_18
+	"Umso besser, ich kann auch wechseln."
+	
+		innkeeper_2> "Da, nimm. Sonst noch was?"
+		innkeeper_6> "Sehr gut. Und jetzt raus mir dir. 
+		innkeeper_8> "Die Angelegenheit mit dem Schulzen. Worum geht es da?"
+	
+	#innkeeper_19
+	"Nein, gewiss nicht, keiner hier würde ein böses Wort über Euch verlauten lassen. Kann ich ihm also ausrichten, dass Ihr gleich mit ihm sprechen werdet? Soll ich Euch vorher noch etwas bringen?"
+		
+		innkeeper_20> "Nicht nötig, ich gehe gleich runter."
+		innkeeper_13> "Ich könnte eine anständige Mahlzeit vertragen."
+		innkeeper_14> "Mir ist einiges von meiner Ausrüstung verloren gegangen und ich müsste es ersetzen. Was hast du alles da?"
+		
+	#innkeeper_20
+	"Es erleichtert mich sehr, das zu hören. Bitte folgt mir, er sitzt unten."
+	
+		END_0> "Geh voran, ich folge dir."
+	
+	#innkeeper_21
+	"Ganz wie Ihr wünscht. Ich bringe dann etwas hoch."
+	
+	#innkeeper_22
+	"Na gut, wie Ihr meint. Ich lasse Euch dann in Ruhe.
+	(Wenn Quest noch nicht aktiv: Eine Kleinigkeit wäre da allerdings noch. innkeeper_2>)
+	"
+	
+	#innkeeper_23
+	"Wie meint Ihr das?"
+	
+		innkeeper_24> "Ihr seid nicht der erste, der mich um so etwas bittet. Immer hat jemand ein Problem und immer soll meinesgleichen es lösen, aber keiner von Euch macht sich einen Augenblick lang Gedanken darum, was es uns vielleicht kostet."
+		innkeeper_26> "Ach, nichts. Macht Euch keine Gedanken, ich rede mit dem Schulzen." 
+		innkeeper_20> "Nichts weiter, achtet nicht auf mein Selbstmitleid."
+		
+	#innkeeper_24
+	
+	#innkeeper_25
+	"Prinzipien? Was meint Ihr, gehört Ihr etwa zu denen, die so einem verrückten Kodex folgen? Keine Frauen oder Kinder und dergleichen?	
+
+		innkeeper_27> "Frauen und Kinder gehören dazu, ich töte sie nicht. Erscheint Euch das so merkwürdig?"
+		innkeeper_28> "Nein, ich habe prosaischere Beweggründe. Ich töte nur für Geld. Und davon eine Menge."
+		innkeeper_28> "Nur, wenn dafür ein offizieller Auftrag besteht. Solange der königliche Erlass nicht greift, greife ich nicht zur Klinge."
+		innkeeper_28> "Ich töte nur Monster. Keine Menschen. Wenn es um Banditen oder Deserteure geht, dann sucht ihr euch lieber gleich einen anderen."
+		innkeeper_28> "Ich sehe mir die 'Bestie' an, aber wenn sie nicht gefährlich ist, dann werde ich mich nicht als Henker missbrauchen lassen."
+	
+	#innkeeper_26
+	"Sehr gut, vielen Dank. Es ist wirklich dringend. Wollt Ihr mir bittte folgen? Er ist unten im Schankraum."
+		
+		END_0> "Nur zu, geht voran."
+	
+	#innkeeper_27
+	"Naja, Ihr tötet doch nur Ungeheuer, dachte ich. Woher immer diese Skrupel wegen Frauen und Kindern, ich meine: Ihr sollt keine Menschen umbringen, sondern Bestien, wen interessiert bei Wölfen schon das Geschlecht? Eine Fähe reißt nicht anders als ein rüde, oder?"
+	
+		innkeeper_28> "Manche Bestien sehen Menschen zum Verwechseln ähnlich, gehen sogar aus ihnen hervor, sind vielleicht selbst nur verfluchte Menschen. Soll ich etwa ganze Familien schlachten?"
+		innkeeper_28> "Auch ein reißender Wolf zeugt Nachwuchs und ich maße mir nicht an, seinesgleichen für alle Zeit auszulöschen, selbst wenn ich die Eltern erlege. Lebt damit."
+	
+	#innkeeper_28
+	"Also wenn das alles ist, dann kann ich Euch beruhigen. Aber der Schulze wird Euch alles erzählen, nicht dass es nachher heißt, ich würde wie ein Waschweib klatschen. Oder ist da sonst noch etwas?"
+		
+		innkeeper_25> Ja. Als ich von Prinzipien sprach, handelte es sich um den Plural. 
+		innkeeper_26> "Ja, das ist alles. Wenn der Schulze dafür garantieren kann, dann bitte, bin ich eben sein Schwert."
+		innkeeper_29> "Das ist noch was. Du sagst, du willst nicht tratschen, aber ich wette du weißt schon Bescheid. Und ich höre die Geschichte gerne von mehr als einem Erzähler. Was ist da los, dass der Schulze nach mir schicken lässt?"
+		
+	#innkeeper_29
+	"Naja, wie schon gesagt, ich will eigentlich nicht plaudern, so  richtig Bescheid weiß ich ja auch nicht."
+	
+		innkeeper_30> "Wieviel ist nötig, um deine Zunge zu lösen? Ein Silberling?"
+		innkeeper_30> "Wieviel ist nötig, um deine Zunge zu lösen? Zwei Silberlinge?"
+		innkeeper_30> "Wieviel ist nötig, um deine Zunge zu lösen? Drei Silberlinge?"
+		innkeeper_30> "Wieviel ist nötig, um deine Zunge zu lösen? Ein Gulden?"
+		innkeeper_30> (Charismatisch)
+		
+	#innkeeper_30
+	"Nunja, wenn Ihr so fragt... Also gut, es kann wohl nicht schaden, wenn ich eine Kleinigkeit oder zwei zum Besten gebe. Also gut, was genau wollt Ihr denn wissen?"
+	
+		innkeeper_37> "Hast du gesehen, worum es sich handelt? Weißt du, was euch plagt?"
+		innkeeper_38> "Ist es eine Sache des ganzen Dorfes?"
+		innkeeper_39> "Wieviel wird mir der Schulze bieten? Weißt du das?"
+		
+	
+	#innkeeper_31
+	"Ich dachte, Eure Familie, die ist sehr bekannt hier in der Gegend, hat doch schon immer Monster gejagt. Seid Ihr sicher, dass Ihr uns nicht helfen mögt?"
+		
+		innkeeper_9> "Ich töte nicht für Euer Gold. Und wenn Ihr mich noch einmal auf die Sache ansprecht, werde ich euch schlachten anstelle der angeblichen Bestien, die den Tölpeln auf ihren Feldern zu schaffen machen."
+		innkeeper_9> "Ich bin mir sicher. Das ewige Töten widert mich an. Ich bin damit fertig."
+		innkeeper_32> "Ist es so schwer zu verstehen, dass ich nicht will?"
+		
+	#innkeeper_32
+	"Darf man fragen, warum Ihr Euch ziert?"
+	
+		innkeeper_9> "Ich töte nicht für Euer Gold. Und wenn Ihr mich noch einmal auf die Sache ansprecht, werde ich euch schlachten anstelle der angeblichen Bestien, die den Tölpeln auf ihren Feldern zu schaffen machen."
+		innkeeper_9> "Das ewige Kämpfen und Töten widert mich an. Ich hätte schon viel früher aufhören sollen, aber besser spät als nie."
+		innkeeper_28> "Weil es sich nicht rechnet. Ich töte für einen Hungerlohn, verglichen mit dem, was Söldner oder Ritter Euch kosten würden."
+		innkeeper_9> "Darf man nicht."
+		innkeeper_33> "Um es kurz zu machen: Es lohnt sich nicht."
+		innkeeper_9> "Wenn man zu lange Monster abschlachtet, sieht man zu viel Leid. Auf beiden Seiten. Mehr will ich dazu nicht sagen."
+		
+	#innkeeper_33
+	"Wie meint Ihr das?"
+		
+		innkeeper_34> Zu hohes Risiko bei zu schäbiger Bezahlung. Ein gewöhnlicher Söldner verdient besser und kann sich dabei die Farben aussuchen, für die er kämpft. Irgendwer führt schließlich immmer Krieg."
+		
+	#innkeeper_34
+	"Wenn es nur die Bezahlung ist..."
+		
+		innkeeper_35> "Ist es nicht. Es geht um Grundsätze."
+		
+	#innkeeper_35?
+	"Grundsätze? Geht es darumm, dass Ihr nicht alles töten wollt, was man euch vorsetzt? Keine Frauen und Kinder und dergleichen?"
+		
+		innkeeper_35> Das auch, aber das ist es nicht allein, es geht um mehr.
+		innkeeper_36> "Wenn Ihr nicht lernt, dass so ein Angebot die Mühe nicht wert ist, müsst Ihr bluten, bis Ihr es lernt. Und nicht nur Ihr, sondern jeder, der landauf landab nach einem wandernden Monsterjäger schreit. Ihr alle müsst begreifen, dass wir nicht mehr für Almosen arbeiten."
+		
+	#innkeeper_36
+	"Also gut, ich werde es dem Schulzen ausrichten. Vielleicht lässt er unter diesen Umständen noch einmal mit sich reden, dass er den Lohn ein wenig anhebt. Wir wollen schließlich alle, dass die Sache gelöst wird, wer weiß schon, wen es als nächstes trifft."
+		
+		END_0> "Tu das!"
+		
+	#innkeeper_37
+	"Nein, kann ich nicht sagen. Und ich bin ganz froh darüber, was ich nicht sehe, hat mich mit ein bsischen Glück auch nicht gesehen. Oder gewittert..."
+		
+		innkeeper_40> "Das ist nicht wirklich viel..."
+	
+	#innkeeper_38
+	"Bisher hat es nur ein paar der Torfstecher erwischt, glaube ich. Das kommt schon mal vor, die Moore sind gefährlich, aber ich habe so ein Gefühl, als könnte es uns alle noch am Arsch kriegen - wenn Ihr den Ausdruck entschuldigt."
+	
+		innkeeper_30> "Hmm, und sonst?"
+	
+	#innkeeper_39
+	"Kann ich nicht genau sagen, aber die Männer sprachen davon, dass sie zwanzig Silberlinge zusammenbekommen hätten. Vielleicht könnt Ihr ja nochmal etwas raushandeln."
+		
+		innkeeper_30> "Zwanzig? Das ist nicht viel. Ich hoffe, er lässt nochmal mit sich reden, Ich arbeite nicht für Almosen."
+		innkeeper_30> "Wenn ihr nicht mehr bieten könnt, dann sollen mir zwanzig reichen."
+		innkeeper_30> "Zwanzig Münzen? Da sehe ich mir die Sache lieber mal an, bevor ich zusage. Für größere Bestien ist das nicht mal ein Almosen."
+		
+	#innkeeper_40
+	"Naja, keiner hat es wirklich gesehen, der noch davon berichten könnte, sprecht mit dem Schulzen, wenn Ihr es genauer wissen wollt. Oder mit Amelia, ihren Mann soll es getroffen haben. 
+		
+		END_0> "Ich rede mit ihm. Wir sehen uns unten."
+		END_0> "Dann werde ich das tun. Führt mich zu ihm."
+		innkeeper_30> "Also gut, ist nicht dein Fehler. Was noch?"
+		innkeeper_5> "Das wäre das. Du führst doch die Schenke?"
+		innkeeper_41> "Amelia? Wer ist das? Lebt sie hier im Dorf?"
+		
+	#innkeeper_41
+	"Allerdings. Sie lebt hier mit ihrer Tochter, rechterhand, wenn man ins Moor raus will."
+		
+		innkeeper_30> "Das wäre das."
+		END_0> "Dann werde ich mal mit dem Schulzen sprechen. Führt mich zu ihm."
+		END_0> "Ich werde mich mit ihr unterhalten."
+		
+	#END_0
+	Gespräch beendet.
+	
+		Elderman_0> Gehe zum Schulzen.
+		
+		
+#Elderman_0
+"Ahh, Ihr müsst Name von Name sein! Jäger der alten Schule, nicht wahr? Eure Familie steht hierzulande in hohem Ansehen, jeder hier kennt Euer Wappen. Bitte, setzt Euch doch zu mir! Wirt! Ein Bier für meinen Gast und eines für mich!
+
+	Elderman_1> "Bier ist nicht so meins."
+	Elderman_2> "Gerne."
+	Elderman_3> "Später, ich trinke nicht, bevor alle Geschäfte über den Tisch sind."
+	Elderman_4> "Ihr könnt mir Honig ums Maul schmieren und mich auf so viele Getränke einladen, wie Euer Säckel erlaubt, aber ich töte nicht für Euch."
+	Elderman_5> "Ihr könnt mir Honig ums Maul schmieren und mich auf so viele Getränke einladen, wie Euer Säckel erlaubt, aber mich überzeugt nur Gold. Echtes Gold, keines, das aus Weizen gebraut wird."
+	
+	#Elderman_1
+	"Du hast es gehört, Yôm, bring [dem Geschlecht], was immer das Herz begehrt, das geht auf mich. Kommen wir zum Geschäft, nicht wahr? Der Bursche hat Euch sicherlich schon gesagt, dass wir dringenden Bedarf an einem Jäger haben."
+		
+		Elderman_8> Also gut, was gibt es denn für ein Problem?
+		Elderman_8> Bei Euch geht irgendeine Kreatur um, nicht wahr? Berichtet mir, damit ich sie schleunigst zur Strecke bringen kann. 
+		
+	
+	#Elderman_2
+	"Mach den Krug ruhig gut voll, Yôm, geht auf mich! Kommen wir zum Geschäft, nicht wahr? Der Bursche hat Euch sicherlich schon gesagt, dass wir dringenden Bedarf an einem Jäger haben."
+	
+		Elderman_8> Also gut, was gibt es denn für ein Problem?
+		Elderman_8> Bei Euch geht irgendeine Kreatur um, nicht wahr? Berichtet mir, damit ich sie schleunigst zur Strecke bringen kann. 
+	
+	#Elderman_3
+	"Ahja, sehr vernünftig, wenn ich's recht bedenke. Mach schon mal zwei bereit, Yôm, das hier sollte kaum allzu lange dauern! Kommen wir zum Geschäft, nicht wahr? Der Bursche hat Euch sicherlich schon gesagt, dass wir dringenden Bedarf an einem Jäger haben."
+	
+		Elderman_10> Also gut, zur Sache. Was habt Ihr denn für Schwierigkeiten? Wie kann ich helfen?
+		Elderman_3> Bring lieber noch etwas zu essen, Yôm, das wäre mir jetzt lieber als ein Bier. 
+		Elderman_8> Bei Euch geht irgendeine Kreatur um, nicht wahr? Berichtet mir, damit ich sie schleunigst zur Strecke bringen kann. 
+			
+	#Elderman_4
+	"Aber aber, woher die harten Worte? Wenn es nur um den Preis geht, wir zahlen Euch eine anständige Summe, keine Sorge."
+	
+		Elderman_9> "Es geht nicht um den Preis, der ist mir egal. Auch für tausend Gulden würde ich es nicht machen."
+		Elderman_11> "Ich kann mir Euer Problem gerne ansehen, aber wenn es eine Kreatur ist, werde ich nicht zur Waffe greifen, auch nicht für tausend Gulden."
+	
+	#Elderman_5
+	"Nunja, wir sind nur ein kleiner Ort, wir können nicht so viel aufbringen, aber ich denke, Ihr werdet zufrieden sein. Es ist bestimmt keine so schwierige Sache für jemanden von Euren Kenntnissen."
+	
+		Elderman_6> "Jaja, genug geschmeichelt. Nun sagt schon, was es zu sagen gibt. danach entscheide ich, was es Euch kosten wird. Wenn Ihr damit nicht zufrieden seid, dann braucht ihr einen anderen Jäger."
+		Elderman_7> "Der Preis bleibt gleich. Ob Ihr nur ein Dorf in den Mooren seid, oder reicher als die Krone selbst, Ihr zahlt den gleichen Preis."
+		
+	#Elderman_6
+	"Ist schon gut, je eher Ihr ans Werk gehen könnt, desto eher werden wir von dieser Plage befreit. Es ist nämlich so, müsst Ihr wissen, dass es im Moor neuerdings nicht mehr geheuer ist. Ich weiß schon, Ihr Stadtmenschen haltet unsereins für einfältig, die wir hier in den Wäldern und Marschen hausen. Streitet es nicht ab, ich sehe es an eurem Gesichtsausdruck. Aber wenn ich sage, es ist nicht geheuer, dann meine ich das auch so und nicht nur, weil irgendwo ein paar Zweige knacken oder der Wind in den Ästen heult. Es verschwinden Menschen. Jetzt schon vier, nein, fünf, wenn man die Kleine mitrechnet."
+
+		Elderman_12> "Ich denke längst nicht so schlecht von Euch, wie ihr vermutet. Allerdings weiß ich auch besser als die meisten, was hier draußen alles lauert, also beantwortet mir ein paar Fragen."
+		Elderman_13> "Ihr habt ganz Recht, bis auf eines: Ich halte Euch nicht einfach nur für einfältig, ich sehe, dass Ihr es seid."
+		Elderman_14> "Euch mag es am Blick für das große Ganze fehlen, aber es spricht für Euch, dass Ihr mich überhaupt habt rufen lassen. Es wird höchste Zeit, dass das Licht des Glaubens auch hier draußen in der Wildnis Einzug hält. 	
+		Elderman_16> "Was für eine Kleine?"
+		Elderman_17> "Was immer es ist, das Euch plagt, Ihr solltet wissen, dass ich nicht blindwütig töte. Ich habe Prinzipien, die ich wahre, egal was es mich selbst kostet."
+	
+	#Elderman_7
+	"Also gut, es ist natürlich Euer gutes Recht, Eure Preise festzulegen, da können wir ja nicht viel machen, aber ich hoffe dennoch, dass Ihr bereit seid, uns zu helfen. Geld allein ist schließlich nicht alles."
+	
+		Elderman_15> "Nicht allles? Was habt ihr mir denn noch zu bieten? Schenkst du mir aus lauter Dankbarkeit die Jungfräulichkeit deiner Töchter?"
+		
+	#Elderman_8
+	"Ja, so sind Jäger nach meinem Geschmack, immer zur Stelle, wenn man sie braucht und ohne moralische Skrupel."
+		
+	#Elderman_9
+	"Darf man denn fragen, weshalb nicht? Wann hätte man je gehört, dass ein Jäger sein Handwerk niederlegt?"
+	
+	#Elderman_10
+	"Ihr kommt sehr rasch zur Sache, nicht wahr?"
+	
+		Elderman_6> "Nur, wenn ich es eilig habe."
+		Elderman_6> "Das höre ich in letzter Zeit öfter."
+		Elderman_6> "Ist daran was Schlechtes?"
+	
+	#Elderman_11
+	"Was denn? Warum nicht? Wer hätte denn schon je gehört, dass ein Jäger sein Handwerk niederlegt? Ich meine, versteht mich nicht falssch, wir wären dankbar, wenn Ihr Euch die Sache bloß anseht, aber wir können nur Jäger bezahlen, die das Problem auch aus der Welt schaffen."
+
+	#Elderman_12
+	"Tja, das hört man gern. Die wenigsten Städter nehmen uns Torfstecher und die Bauern hier in der Umgebung für voll. Selbst wenn ich zum Junker gehe, sehe ich immerzu, wie er mich von oben herab ansieht. Da freut es mich, wenn mal jemand mit ein bisschen Verständnis daherkommt. Wir wissen schon, was wir mit eigenen Augen sehen und mit unseren beiden Ohren hören. Und ich sage Euch: Im Moor ist es neuerdings nicht geheuer. Da ist was, ein Wolfsrudel dachten wir zuerst, aber dann haben wir den ersten Kadaver gefunden: Wölfe machen sowas nicht."
+	
+		Elderman_24> "Kadaver?"
+		Elderman_25> "Den ersten? Wieviele waren es?"
+		Elderman_26> "Wen hat es denn erwischt?"
+
+	#Elderman_13
+	"Tja, mir egal, was Ihr von mir denkt, aber wir haben Kadaver geseh'n und das war kein Tier und nichts Geheures. Das war eine Bestie, egal wie Ihr guckt."
+	
+		Elderman_24> "Kadaver?"
+		Elderman_25> "Mehrere? Wieviele waren es?"
+		Elderman_26> "Wen hat es denn erwischt?"
+	
+	#Elderman_14
+	
+	#Elderman_15
+	"Himmel, wo denkt Ihr hin? Natürlich würde ich das niemals... Achso. Verstehe... Ihr wolltet Euch einen Spaß mit mir erlauben. Nun, es ist Euch gelungen, ich hoffe, Ihr seid zufrieden. Aber vielleicht bedeutet Euch das Leben armer Menschen trotzdem genug, um uns zu helfen, obwohl wir nicht fürstlich zahlen können. Ich biete Euch zwanzig Silberstücke, wenn Ihr uns mit der Sache helft."
+	
+	#Elderman_16
+	"Ja, die kleine Moira, schlimme Sache das. Sie und ihr Vater wurden seit gestern nicht gesehen. Ist eienr der Gründe, weshalb ich nach Euch geschickt habe. Es kommt schonmal vor, dass es bei der Arbeit ein Unglück gibt oder ein Wanderer vom Weg abkommt, aber wer sich auf den Wegen hält, dem passiert sonst nichts. Und jetzt das, ganz üble Sache. Ich hoffe wirklich, Ihr helft uns."
+	
+		END_1> "Kinder konnte ich noch nie leiden. Wenn ich das Balg auch retten soll, vergesst es, damit bin ich raus."
+		Elderman_17> "Klingt schlimm. Wenn es jetzt schon Menschen auf den Wegen angreift, sollte ich mich besser zügig darum kümmern. Aber Ihr solltet wissen, dass ich meine Grundsätze habe. Prrinzipien."
+
+	#Elderman_17
+	"Prinzipien? Ihr seid doch hoffentlich kein(e) Moralist(in), oder? Keine(r) von denen, die predigen, dass nur die schädlichen Bestien getötet werden sollen und dann selbst entscheiden, was schädlich ist, während unsereins darunter leidet."
+		
+		Elderman_23> "Doch, ganz genau so eine(r) bin ich. Ich entscheide, was ich töte, nicht Ihr. Ihr bezahlt mich nur, wenn ihr wollt, dass ich es tue."
+		Elderman_19> "Es geht um was Anderes: Ich töte nur für Gold und ihr zahlt einfach nicht genug. Zwanzig Silberlinge? Das ist ein Witz, ich nehme das Doppelte, wenn ich durch Wälder und Sümpfe streunen soll, um zu finden, was Euch vielleicht quält."
+		Elderman_21> "Ich bin kein Vollstrecker und auch kein Schuldeneintreiber. Ich töte nur, wenn es der königliche Erlass gestattet. Wenn es um Banditen geht, um Deserteure oder um grantige Nachbarn, dann wendet Euch an die Büttel oder meinetwegen an ein paar fahrende Ritter."
+		Elderman_22> "Ich töte keine Frauen. Mir egal, ob es Hexen sind oder Wildfräulein oder was immer. Ich töte sie nicht."
+		
+	#Elderman_19
+	(Verhandlungsprobe)
+	(Bei Gelingen: "Das Doppelte können wir nicht zahlen, wir haben nicht so viel. Abr ich gebe Euch dreißig, obwohl ich dafür eine Kuh werde verkaufen müssen.")
+	(Bei Misslingen: "Ich würde Euch mehr zahlen, wenn ich könnte, aber ich kann nicht. Es ist einfach nicht mehr da, wir können Euch allenfalls eine Kuh geben, wenn Ihr wollt.")
+	
+		Elderman_20> "Meinetwegen, weil ich heute einen großzügigen Tag habe. Dann also dreißig."
+		Elderman_20> "Lasst gut sein, ihr sollt euch dafür nicht ruinieren."
+		Elderman_21> "Also gut. Dann bleibt es bei zwanzig. Und behaltet eure Kuh, so verzweifelt bin ich nicht."
+		
+	#Elderman_20
+	"Das wäre das. Oder habt Ihr sonst noch Grundsätze, die Euch womöglich die Jagd verbieten?"
+		
+		Elderman_17> Allerdings. 
+		Elderman_6> Nein, das wäre dann alles. 
+		
+	#Elderman_21
+	"Nein, nein, das ist es nicht. Jedenfalls hoffen wir, dass es das nicht ist, hier oben hatten wir vor mehr als zwanzig Jahren zuletzt Räuber. Das Dorf liegt zu weit abseits, als dass es sich lohnen würde und welcher Räuber stiehlt schon Reisigbündel von Bauersfrauen."
+		
+		Elderman_20> "Mehr Sorgen würde ich mir darum machen, dass der Räuber auf die Idee kommt, die Frauen zu stehlen als den Reisig... Ach, beachtet mich gar nicht."
+		Elderman_20> "Dann werfe ich einen Blick drauf und sage dir Bescheid, falls es sich doch um Räuber handelt."
+		END_1> "Bedaure, das Risiko gehe ich nicht ein, wenn ich dort rausgehe und mir eine Bande Wegelagerer auflauert, kann ich nicht einfach umkehren und sagen 'Ihr seid mir egal', ich wäre gezwungen, zu kämpfen und das liefe aufs Gleiche hinaus, als würde ich gleich zusagen. Du verstehst also, dass ich dir absagen muss. Diese Entscheidung ist endgültig, daran ändert auch alles Bier des Dorfes nichts."
+		
+	#Elderman_22
+	"Nicht einmal, wenn Ihr wisst, dass es sich um Frevler und Bestien handelt?"
+	
+		Elderman_23> "Nicht einmal dann."
+		Elderman_23> "Nicht einmal dann. Und bevor du fragst: Für Kinder gilt das Gleiche."
+		
+	#Elderman_23
+	"Auch das noch. Na um unseretwillen hoffe ich, dass das kein Problem wird. Wir wissen nicht, was es ist, das unsere Männer im Moor überfällt, aber Ihr werdet es doch herausfinden, ehe Ihr mir eine Absage erteilt?"
+	
+		END_1> "Nein. Wenn Ihr es mir nicht sagen könnt, riskiere ich meinen Hals nicht dabei. Das ist mein letztes Wort. Lebt wohl."
+		Elderman_20> "Ich werde es mir ansehen. Ich sage dir Bescheid, wenn es ein Problem gibt."
+		
+	#END_1
+	"Nun, dann danke ich Euch für nichts. Trinkt ruhig aus, das Getränk ist bezahlt." 
+	Der schulze erhebt sich und verlässt deinen Tisch. 
+	In der Schenke ist ansonsten nur ein einziger freier Platz. Dort sitzt ein Bewaffneter in zerlumpten Kleidern, der sein bier schlürft.
+		
+		TimWiesel_0> Gehe zum Bewaffneten und rede mit ihm. 
+		
+	#Trade_0 
+	Hier geht es in das Handelsinventar, da kann man dann alles lustig raussuchen, die Preise vergleichen und vor allem Scheiße kaufen. Von Kühen, Schweinen, Schafen und natürlich Menschen. 
